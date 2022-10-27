@@ -46,4 +46,69 @@ body {
   text-align: end;
 }
 
+.hero-section {
+  background-image: url("../../assets/images/Giant Panda.png");
+  background-color: #000;
+  background-position: center bottom;
+  height: 700px;
+  width: 1600px;
+}
+
+.hero-section__header {
+  margin: 0;
+  width: 500.31px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  left: 880px;
+  top: 86px;
+  z-index: 10;
+}
+
+.hero-section__header-text {
+  font-size: 10.65em;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  line-height: 75%;
+  text-align: center;
+}
+
+.hero-section__header-text--important {
+  font-size: 10.65em;
+  font-weight: 700;
+  color: rgb(255, 238, 46);
+}
+
+.hero-section__circle {
+  width: 465px;
+  height: 465px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 232.5px;
+  position: relative;
+  left: 807px;
+  bottom: 388px;
+}
+
+.button {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border: none;
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.hero-section__button-box {
+  position: relative;
+  left: 983px;
+  bottom: 320px;
+}
+
 /*# sourceMappingURL=style.css.map */

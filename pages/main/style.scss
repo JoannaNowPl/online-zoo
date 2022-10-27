@@ -5,6 +5,16 @@
   justify-content: $justify-content;
 }
 
+@mixin flex-column($justify-content: flex-start) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: $justify-content;
+}
+@mixin background-orange {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+}
+
 body {
   width: 1600px;
   font-family: "Roboto", sans-serif;
@@ -25,7 +35,7 @@ body {
 
 .header__nav {
   @include flex-row(space-between);
-  width:100%
+  width: 100%;
 }
 
 .header__menu {
@@ -39,6 +49,65 @@ body {
   padding-right: 58px;
 }
 .header__author {
-width:30%;
+  width: 30%;
   text-align: end;
+}
+.hero-section {
+  background-image: url("../../assets/images/Giant\ Panda.png");
+  background-color: #000;
+  
+  background-position: center bottom;
+  height: 700px;
+  width: 1600px;
+}
+.hero-section__header {
+  margin: 0;
+  width: 500.31px;
+  height: 400px;
+  @include flex-column;
+  position: relative;
+  left: 880px;
+  top: 86px;
+  z-index: 10;
+}
+.hero-section__header-text {
+  font-size: 10.65em;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  line-height: 75%;
+  text-align: center;
+}
+.hero-section__header-text--important {
+  font-size: 10.65em;
+  font-weight: 700;
+  color: rgba(255, 238, 46, 1);
+}
+
+.hero-section__circle {
+  width: 465px;
+  height: 465px;
+  @include background-orange;
+  border-radius: 232.5px;
+  position: relative;
+  left: 807px;
+  bottom: 388px;
+}
+
+.button{
+    @include background-orange;
+    border: none;
+    border-radius: 25px;
+    width: 298px;
+    height: 54px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.hero-section__button-box{
+    position: relative;
+    left: 983px;
+    bottom: 320px;
 }
