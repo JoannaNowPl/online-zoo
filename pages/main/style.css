@@ -87,7 +87,7 @@ body {
 .hero-section__circle {
   width: 465px;
   height: 465px;
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(113.96deg, rgb(249, 128, 75) 1.49%, rgb(254, 144, 19) 101.44%);
   border-radius: 232.5px;
   position: relative;
   left: 807px;
@@ -95,7 +95,7 @@ body {
 }
 
 .button {
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(113.96deg, rgb(249, 128, 75) 1.49%, rgb(254, 144, 19) 101.44%);
   border: none;
   border-radius: 25px;
   width: 298px;
@@ -168,6 +168,56 @@ body {
   font-size: 2.4em;
   margin: 0;
   padding: 54px 0 14px 0;
+}
+
+.gallery-section__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 366px);
+  column-gap: 30px;
+  grid-template-rows: repeat(2, 426px);
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.gallery-section__animal-card {
+  width: 366px;
+  height: 426px;
+  border: 1px solid;
+  border-color: rgb(250, 111, 50) rgb(254, 144, 19);
+  border-radius: 5px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gallery-section__picture {
+  border-radius: 5px 5px 0 0;
+}
+
+.gellery-section__card-description-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 13px 14px 16px;
+}
+
+.gallery-section__card-title {
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 22.4px;
+  margin: 0;
+}
+
+.gallery-section__card-subtitle {
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

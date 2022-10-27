@@ -12,7 +12,20 @@
   justify-content: $justify-content;
 }
 @mixin background-orange {
-  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  background: linear-gradient(
+    113.96deg,
+    rgb(249, 128, 75) 1.49%,
+    rgb(254, 144, 19) 101.44%
+  );
+}
+$primary-orange-color: rgb(250, 111, 50);
+$secondary-orange-color: rgb(254, 144, 19);
+
+@mixin border-primary {
+  border: 1px solid;
+  border-color: $primary-orange-color $secondary-orange-color;
+  border-radius: 5px;
+  z-index: 10;
 }
 
 body {
@@ -56,7 +69,7 @@ body {
 .hero-section {
   background-image: url("../../assets/images/Giant\ Panda.png");
   background-color: #000;
-  
+
   background-position: center bottom;
   height: 700px;
   width: 1600px;
@@ -95,77 +108,115 @@ body {
   bottom: 388px;
 }
 
-.button{
-    @include background-orange;
-    border: none;
-    border-radius: 25px;
-    width: 298px;
-    height: 54px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.6em;
-    text-align: center;
+.button {
+  @include background-orange;
+  border: none;
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6em;
+  text-align: center;
 }
 
-.hero-section__button-box{
-    position: relative;
-    left: 983px;
-    bottom: 320px;
+.hero-section__button-box {
+  position: relative;
+  left: 983px;
+  bottom: 320px;
 }
 
-.backstage-section{
+.backstage-section {
+  display: grid;
+  grid-template-columns: (219px auto 200px);
+  grid-template-rows: 605px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.backstage-section__main {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-columns: (609px auto);
+  grid-template-rows: 403px;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.backstage-section__image {
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.backstage-section__article {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 0 87px;
+  height: 100%;
+}
+.backstage-section__aside-image {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.backstage-section__header-title {
+  font-size: 4.8em;
+  font-weight: 400;
+  line-height: 57.6px;
+  margin: 0;
+  line-height: 120%;
+}
+.backstage-section__text {
+  font-size: 1.6em;
+  line-height: 20.8px;
+  margin: 0;
+  padding-top: 20px;
+}
+.backstage-section__header-secondary-title {
+  font-size: 2.4em;
+  margin: 0;
+  padding: 54px 0 14px 0;
+}
+
+
+.gallery-section__gallery{
     display: grid;
-    grid-template-columns: (219px auto 200px);
-    grid-template-rows: 605px;
-    align-items: center;
-    margin-top: 12px;
+    grid-template-columns: repeat(3, 366px);
+    column-gap: 30px;
+    grid-template-rows: repeat(2, 426px);
+    row-gap: 20px;
+    justify-content: center;
 }
 
-.backstage-section__main{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    display: grid;
-    grid-template-columns: (609px auto);
-    grid-template-rows: 403px;
-    align-items: center;
-    padding-top: 60px;
-   
+.gallery-section__animal-card {
+  width: 366px;
+  height: 426px;
+  @include border-primary;
+  @include flex-column;
+
 }
 
-.backstage-section__image{
-    grid-column-start: 1;
-    grid-column-end: 1;
-    
+.gallery-section__picture {
+    border-radius: 5px 5px 0 0;
 }
-.backstage-section__article{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px 0 87px;
-    height: 100%;
-   
+
+.gellery-section__card-description-box{
+    @include flex-row(space-between);
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 13px 14px 16px;
 }
-.backstage-section__aside-image{
-    grid-column-start: 3;
-    grid-column-end: 3;
-    
+
+.gallery-section__card-title{
+font-size: 1.6em;
+font-weight: 500;
+line-height: 22.4px;
+margin:0
 }
-.backstage-section__header-title{
-    font-size: 4.8em;
-    font-weight: 400;
-    line-height: 57.6px;
-    margin: 0;
-    line-height: 120%;
-}
-.backstage-section__text{
-    font-size: 1.6em;
-    line-height: 20.8px;
-    margin: 0;
-    padding-top:20px;
-}
-.backstage-section__header-secondary-title{
-    font-size: 2.4em;
-    margin: 0;
-    padding: 54px 0 14px 0;
+.gallery-section__card-subtitle{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 18px;
+    margin:0
 }
