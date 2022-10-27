@@ -170,6 +170,14 @@ body {
   padding: 54px 0 14px 0;
 }
 
+.gallery-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 140px 80px 138px;
+}
+
 .gallery-section__gallery {
   display: grid;
   grid-template-columns: repeat(3, 366px);
@@ -218,6 +226,14 @@ body {
   font-weight: 300;
   line-height: 18px;
   margin: 0;
+}
+
+.button-round {
+  background: linear-gradient(113.96deg, rgb(249, 128, 75) 1.49%, rgb(254, 144, 19) 101.44%);
+  width: 62px;
+  height: 62px;
+  border: none;
+  border-radius: 31px;
 }
 
 /*# sourceMappingURL=style.css.map */
