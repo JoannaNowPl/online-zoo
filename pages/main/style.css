@@ -1,5 +1,49 @@
-h1 {
-  color: red;
+body {
+  width: 1600px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+.header {
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #000;
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 220px;
+  font-weight: 500;
+  font-size: 1.6em;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  width: 100%;
+  padding-left: 63px;
+}
+
+.header__menu-item {
+  padding-right: 58px;
+}
+
+.header__author {
+  width: 30%;
+  text-align: end;
 }
 
 /*# sourceMappingURL=style.css.map */
