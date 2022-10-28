@@ -15,6 +15,7 @@ body {
   line-height: 22.4px;
   text-align: center;
   padding-top: 2px;
+  cursor: pointer;
 }
 
 .link {
@@ -269,7 +270,7 @@ body {
 }
 
 .pick-section {
-  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
   opacity: 0.9;
   margin: 0;
   width: 1600px;
@@ -374,6 +375,22 @@ body {
   text-decoration-line: underline;
   text-decoration-color: rgb(254, 144, 19);
   text-underline-position: under;
+}
+
+.testimonials-section__testimonials-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonnials-section__testimonial {
+  width: 268px;
+  height: 391px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(-80deg, rgba(254, 189, 171, 0.74) 6.48%, rgba(243, 169, 248, 0.66) 22.51%, #e0d8f0 45.57%, #eaf7fe 82.33%, #eaf7fe 99.1%) border-box;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
