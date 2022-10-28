@@ -103,7 +103,9 @@ body {
   color: #fff;
   font-weight: 500;
   font-size: 1.6em;
+  line-height: 22.4px;
   text-align: center;
+  padding-top: 2px;
 }
 
 .hero-section__button-box {
@@ -171,11 +173,15 @@ body {
 }
 
 .gallery-section {
+  margin-top: 106px;
+}
+
+.gallery-section__gallery-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 140px 80px 138px;
+  padding: 0 140px 0 138px;
 }
 
 .gallery-section__gallery {
@@ -234,6 +240,21 @@ body {
   height: 62px;
   border: none;
   border-radius: 31px;
+}
+
+.gallery-section__bottom-button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 460px;
+  position: relative;
+  bottom: 226px;
+}
+
+.gallery-section__bottom-button {
+  position: relative;
+  bottom: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
