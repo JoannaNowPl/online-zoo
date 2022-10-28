@@ -18,8 +18,11 @@
     rgb(254, 144, 19) 101.44%
   );
 }
+$default-color: rgba(51, 59, 65, 1);
+
 $primary-orange-color: rgb(250, 111, 50);
 $secondary-orange-color: rgb(254, 144, 19);
+$thirdary-orange-color:rgb(249, 128, 75);
 
 @mixin border-primary {
   border: 1px solid;
@@ -28,12 +31,57 @@ $secondary-orange-color: rgb(254, 144, 19);
   z-index: 10;
 }
 
+@mixin font($font-size, $font-weight, $line-height){
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+@mixin h2{
+  @include font(4.8em, 400, 57.6px)
+}
+
+@mixin h3{
+  @include font(3.6em, 400, 46.8px)
+}
+@mixin subtitle{
+  @include font(2.4em, 400, 28.8px);
+}
+@mixin p{
+  @include font(1.6em, 400, 22.4px);
+}
+
+@mixin p-small{
+  @include font(1.5em, 300, 18px);
+}
+
 body {
-  width: 1600px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  width: 1600px;  
   margin: 0 auto;
 }
+
+
+.button {
+  @include background-orange;
+  border: none;
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 22.4px;
+  text-align: center;
+  padding-top: 2px;
+}
+ 
+.link{
+  text-decoration: none;
+}
+.link:visited{
+  color: $default-color;
+  text-decoration: none;
+}
+
 
 .header {
   box-sizing: border-box;
@@ -108,20 +156,6 @@ body {
   bottom: 388px;
 }
 
-.button {
-  @include background-orange;
-  border: none;
-  border-radius: 25px;
-  width: 298px;
-  height: 54px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.6em;
-  line-height: 22.4px;
-  text-align: center;
-  padding-top: 2px;
-}
- 
 
 .hero-section__button-box {
   position: relative;
@@ -164,20 +198,16 @@ body {
   grid-column-end: 3;
 }
 .backstage-section__header-title {
-  font-size: 4.8em;
-  font-weight: 400;
-  line-height: 57.6px;
+  @include h2;
   margin: 0;
-  line-height: 120%;
-}
+ }
 .backstage-section__text {
-  font-size: 1.6em;
-  line-height: 20.8px;
+ @include p;
   margin: 0;
   padding-top: 20px;
 }
 .backstage-section__header-secondary-title {
-  font-size: 2.4em;
+  @include subtitle;
   margin: 0;
   padding: 54px 0 14px 0;
 }
@@ -226,12 +256,12 @@ body {
 font-size: 1.6em;
 font-weight: 500;
 line-height: 22.4px;
+color: #000;
 margin:0
 }
 .gallery-section__card-subtitle{
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 18px;
+    @include p-small;
+    color: #000;
     margin:0
 }
 
@@ -257,3 +287,100 @@ margin:0
   position: relative;
   bottom: 100px;
 }
+
+// Pick and feed a friend section
+.pick-section{
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9; 
+  margin:0;
+  width: 1600px;
+  height: 1004px;
+  display: flex;
+
+}
+
+.pick-section__inside-box{
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 1160px;
+  height: 835px;
+  margin: auto;
+  padding: 41px 0 59px 0;
+}
+.pick-section__header-primary{
+  font-size: 4.8em;
+  font-weight: 400; 
+  line-height: 57.6px;
+  text-align: center;
+  color:$secondary-orange-color;
+  margin:0;
+}
+.pick-section__header-secondary{
+  @include h3;
+  text-align: center;
+  margin:0;
+  padding: 40px 0;
+}
+.pick-section__header-thirdary{
+  @include subtitle;
+  text-align:left;
+  margin:0;
+  padding: 30px 0 30px 99px;
+}
+
+.pick-section__text{
+  @include font(1.6em, 400, 20.8px);
+  text-align: left;
+  margin:0;
+  padding: 10px 0 10px 99px;
+  width: 863px;
+}
+
+.pick-section__text--strong{
+font-weight: 500;
+width: 1051px;
+}
+
+.pick-section__pay-box{
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+ justify-content: space-between;
+ width: 764px;
+ margin: auto;
+ padding-bottom: 60px; 
+ }
+ .pick-section__picture-subtitle{
+  @include p;
+  width: 168px;
+ }
+
+ .pick-section__image-box{
+  background-color: #fff;
+  @include border-primary;
+  width: 168px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .pick-section__arrow{
+  position: relative;
+  top: 62px ;
+ }
+
+ .pick-section__button{
+  margin-left: 431px;
+ }
+
+ .pick-section__link,
+ .pick-section__link:visited
+ {
+  text-decoration-line: underline;
+  text-decoration-color: $secondary-orange-color;
+  text-underline-position: under;
+ }
+ 
