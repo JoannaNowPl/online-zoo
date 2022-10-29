@@ -1,5 +1,5 @@
 body {
-  width: 1600px;
+  min-width: 1600px;
   margin: 0 auto;
 }
 
@@ -18,12 +18,18 @@ body {
   cursor: pointer;
 }
 
+.button:active {
+  background-image: none;
+  background-color: rgb(228, 114, 9);
+}
+
 .button--rectangle {
   border-radius: 5px;
 }
 
 .link {
   text-decoration: none;
+  color: #fff;
 }
 
 .link:visited {
@@ -35,15 +41,47 @@ body {
   box-sizing: border-box;
   color: #fff;
   background-color: #000;
-  width: 1600px;
+  min-width: 1600px;
   height: 80px;
+}
+
+.header__main-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 220px;
+  width: 1160px;
+  height: 100%;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 1.6em;
+}
+
+.header__logo-box {
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.header__title {
+  font-size: 19px;
+  line-height: 22.82px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 2px;
+  text-align: center;
+}
+
+.header__title-link:visited {
+  color: #fff;
+}
+
+.header__logo {
+  position: relative;
+  bottom: 25.6px;
+  left: 6.5px;
 }
 
 .header__nav {
@@ -68,6 +106,15 @@ body {
   padding-right: 58px;
 }
 
+.header__menu-link:visited {
+  color: #fff;
+}
+
+.header__menu-link:active,
+.header__menu-link:hover {
+  color: rgb(249, 128, 75);
+}
+
 .header__author {
   width: 30%;
   text-align: end;
@@ -77,8 +124,15 @@ body {
   background-image: url("../../assets/images/Giant Panda.png");
   background-color: #000;
   background-position: center bottom;
+  background-repeat: no-repeat;
   height: 700px;
-  width: 1600px;
+  min-width: 1600px;
+  background-size: cover;
+}
+
+.hero-section__container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .hero-section__header {
@@ -138,10 +192,12 @@ body {
   grid-column-start: 2;
   grid-column-end: 2;
   display: grid;
-  grid-template-columns: 609px auto;
+  grid-template-columns: 609px 552px;
   grid-template-rows: 403px;
   align-items: center;
   padding-top: 60px;
+  width: 1160px;
+  margin: 0 auto;
 }
 
 .backstage-section__image {
@@ -154,7 +210,7 @@ body {
   grid-column-end: 2;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 0 87px;
+  padding: 0 0 0 87px;
   height: 100%;
 }
 
@@ -188,6 +244,7 @@ body {
 
 .gallery-section {
   margin-top: 106px;
+  height: 1104px;
 }
 
 .gallery-section__gallery-box {
@@ -195,7 +252,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 140px 0 138px;
+  width: 1324px;
+  margin: 0 auto;
 }
 
 .gallery-section__gallery {
@@ -205,6 +263,7 @@ body {
   grid-template-rows: repeat(2, 426px);
   row-gap: 20px;
   justify-content: center;
+  width: 1160px;
 }
 
 .gallery-section__animal-card {
@@ -217,14 +276,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .gallery-section__picture {
   border-radius: 5px 5px 0 0;
+  width: 366px;
+  height: 366px;
+  transition: width 0.5s, height 0.5s;
 }
 
-.gellery-section__card-description-box {
+.gallery-section__animal-card:hover .gallery-section__picture {
+  width: 386px;
+  height: 386px;
+}
+
+.gallery-section__card-description-box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -232,6 +300,14 @@ body {
   box-sizing: border-box;
   width: 100%;
   padding: 8px 13px 14px 16px;
+  transition: width 0.7s, transform 1s, padding 0.7s;
+}
+
+.gallery-section__animal-card:hover > .gallery-section__card-description-box {
+  background-color: lightgray;
+  width: 386px;
+  transform: translateY(-20px);
+  padding: 20px 13px 25px 16px;
 }
 
 .gallery-section__card-title {
@@ -256,6 +332,12 @@ body {
   height: 62px;
   border: none;
   border-radius: 31px;
+  cursor: pointer;
+}
+
+.button-round:active {
+  background-image: none;
+  background-color: rgb(228, 114, 9);
 }
 
 .gallery-section__bottom-button-box {
@@ -277,7 +359,7 @@ body {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #febdab 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #e0d8f0 80.49%, #eaf7fe 127.9%, #eaf7fe 149.54%);
   opacity: 0.9;
   margin: 0;
-  width: 1600px;
+  min-width: 1600px;
   height: 1004px;
   display: flex;
 }
@@ -382,11 +464,19 @@ body {
 }
 
 .testimonials-section {
-  width: 1600px;
+  min-width: 1600px;
   height: 919px;
   margin: auto;
-  padding: 140px 220px 0 220px;
+  padding-top: 140px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1160px 1fr;
+  grid-template-rows: auto;
+}
+
+.testimonials-section__main-box {
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
 
 .testimonials-section__header {
@@ -506,27 +596,40 @@ body {
 }
 
 .testimonial-section__aside-image-box {
-  width: 247px;
-  height: 275px;
+  width: 100%;
+  height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.testimonial-section__aside-image {
   position: relative;
-  left: 1132px;
-  bottom: 108px;
-  display: block;
-  overflow: hidden;
+  top: 130px;
+  z-index: -1;
 }
 
 .footer {
-  width: 1600px;
+  min-width: 1600px;
   height: 443px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0 220px;
+  margin: 0 auto;
+  padding: 0;
   background-color: #000;
+}
+
+.footer-box {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  width: 1160px;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .footer__left-section {
@@ -631,7 +734,7 @@ body {
   height: 42px;
   border: solid 1px rgb(75, 146, 0);
   border-radius: 5px;
-  background-color: #F1F3F2;
+  background-color: #f1f3f2;
   color: rgb(75, 146, 0);
   font-size: 1.6em;
   line-height: 22.4px;
