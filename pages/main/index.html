@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
@@ -380,14 +380,58 @@
           <div class="testimonials-section__scroll"></div>
         </div>
 
-        <button class="button testimonial-section__button">
+        <button class="button button--rectangle testimonial-section__button">
           LEAVE FEEDBACK
         </button>
-        <aside class="testimonial-section__aside-image">
-          <img src="../../assets/images/leav_foto.png" alt="leaf">
+        <aside class="testimonial-section__aside-image-box">
+          <img src="../../assets/images/leav_foto.png" alt="leaf" class="testimonial-section__aside-image">
         </aside>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <section class="footer__left-section">
+        <img src="../../assets/logo.png" alt="logo" class="footer-logo">
+        <button class="button button--rectangle footer__left-section-button">DONATE FOR VOLUNTEERS</button>
+        <div class="footer__icon-block">
+          <div class="footer__icon-box"><img src="../../assets/icons/fb.svg" alt="Facebook"></div>
+          <p class="footer__icon-name">Facebook</p>
+        </div>
+        <div class="footer__icon-block">
+          <div class="footer__icon-box"><img src="../../assets/icons/twitter.svg" alt="Twitter"></div>
+          <p class="footer__icon-name">Twitter</p>
+        </div>
+        <div class="footer__icon-block">
+          <div class="footer__icon-box"><img src="../../assets/icons/insta.svg" alt="Instagram"></div>
+          <p class="footer__icon-name">Instagram</p>
+        </div>
+      
+        <div class="footer__icon-block">
+          <div class="footer__icon-box"><img src="../../assets/icons/yt.svg" alt="YouTube"></div>
+          <p class="footer__icon-name">YouTube</p>
+        </div>
+      </section>
+      <menu class="footer-menu-section">
+        <nav>
+          <ul class="footer-menu">
+            <li><a>About</a></li>
+            <li><a>Map</a></li>
+            <li><a>Zoos</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </nav>
+      </menu>
+      <section class="footer__right-section">
+        <form>
+          <header class="footer__form-header">Subscribe to our news</header>
+          <input placeholder="Enter your mail" class="footer__input">
+          <button type="submit" class="footer__submit-button">Submit</button>
+        </form>
+        <aside class="footer__copyright">
+          <p class="footer__copyright-text">Designed by Alisa Samborskaya</p>
+          <p class="footer__copyright-text">©RSSchool & ©Yem Digital 2021</p>
+        </aside>
+      </section>
+
+    </footer>
   </body>
 </html>
