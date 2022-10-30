@@ -22,7 +22,7 @@ $default-color: rgba(51, 59, 65, 1);
 
 $primary-orange-color: rgb(250, 111, 50);
 $secondary-orange-color: rgb(254, 144, 19);
-$thirdary-orange-color: rgb(249, 128, 75);
+$thirdary-orange-color: #f9804b;
 $orange-color-hover: rgba(228, 114, 9, 1);
 
 @mixin border-primary {
@@ -85,11 +85,11 @@ body {
   text-decoration: none;
   color: #fff;
 }
-
 .link:visited {
   color: $default-color;
   text-decoration: none;
 }
+
 
 .header {
   box-sizing: border-box;
@@ -124,6 +124,9 @@ body {
 
 .header__title-link:visited {
   color: #fff;
+}
+.header__title-link--active{
+  color: $thirdary-orange-color
 }
 
 .header__logo {

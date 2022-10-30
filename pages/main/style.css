@@ -78,6 +78,10 @@ body {
   color: #fff;
 }
 
+.header__title-link--active {
+  color: #f9804b;
+}
+
 .header__logo {
   position: relative;
   bottom: 25.6px;
@@ -112,7 +116,7 @@ body {
 
 .header__menu-link:active,
 .header__menu-link:hover {
-  color: rgb(249, 128, 75);
+  color: #f9804b;
 }
 
 .header__author {
@@ -659,7 +663,7 @@ body {
 }
 
 .footer__icon-block:hover > .footer__icon-name {
-  color: rgb(249, 128, 75);
+  color: #f9804b;
 }
 
 .footer__icon-box {
@@ -713,7 +717,7 @@ body {
 
 .footer-menu__link:active,
 .footer-menu__link:hover {
-  color: rgb(249, 128, 75);
+  color: #f9804b;
 }
 
 .footer__right-section {
