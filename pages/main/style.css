@@ -658,6 +658,10 @@ body {
   margin: 0 0 10px 0;
 }
 
+.footer__icon-block:hover > .footer__icon-name {
+  color: rgb(249, 128, 75);
+}
+
 .footer__icon-box {
   background-color: rgba(196, 196, 196, 0.5);
   width: 26px;
@@ -699,6 +703,19 @@ body {
   padding: 0;
 }
 
+.footer-menu__link {
+  color: #fff;
+}
+
+.footer-menu__link:visited {
+  color: #fff;
+}
+
+.footer-menu__link:active,
+.footer-menu__link:hover {
+  color: rgb(249, 128, 75);
+}
+
 .footer__right-section {
   box-sizing: border-box;
   display: flex;
@@ -725,20 +742,38 @@ body {
   border: 0.7px solid transparent;
   border-radius: 2px;
   padding: 10px;
+  color: #fff;
   font-size: 1.6em;
   line-height: 22.4px;
+}
+
+.footer__input:focus {
+  background: none;
+  border: 1px solid rgb(75, 146, 0);
+  outline: none;
 }
 
 .footer__submit-button {
   width: 129px;
   height: 42px;
-  border: solid 1px rgb(75, 146, 0);
+  border: solid 1px #000;
   border-radius: 5px;
   background-color: #f1f3f2;
-  color: rgb(75, 146, 0);
+  color: #000;
   font-size: 1.6em;
   line-height: 22.4px;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+.footer__submit-button:active {
+  border-color: rgb(75, 146, 0);
+  color: rgb(75, 146, 0);
+}
+
+.footer__form:invalid > .footer__submit-button {
+  border-color: rgb(211, 20, 20);
+  color: rgb(211, 20, 20);
 }
 
 .footer__copyright {

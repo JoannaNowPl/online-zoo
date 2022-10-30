@@ -444,49 +444,80 @@
           <a href="./index.html" class="link"
             ><img src="../../assets/logo.png" alt="logo" class="footer-logo"
           /></a>
-          <button class="button button--rectangle footer__left-section-button">
-            DONATE FOR VOLUNTEERS
-          </button>
-          <div class="footer__icon-block">
-            <div class="footer__icon-box">
-              <img src="../../assets/icons/fb.svg" alt="Facebook" />
+          <form action="../donate/index.html">
+            <button
+              class="button button--rectangle footer__left-section-button"
+              type="submit"
+              formtarget="_blank">
+              DONATE FOR VOLUNTEERS
+            </button>
+          </form>
+          <a class="link" href="https://pl-pl.facebook.com" target="_blank"
+            ><div class="footer__icon-block">
+              <div class="footer__icon-box">
+                <img src="../../assets/icons/fb.svg" alt="Facebook" />
+              </div>
+              <p class="footer__icon-name">Facebook</p>
             </div>
-            <p class="footer__icon-name">Facebook</p>
-          </div>
-          <div class="footer__icon-block">
-            <div class="footer__icon-box">
-              <img src="../../assets/icons/twitter.svg" alt="Twitter" />
+          </a>
+          <a class="link" href="https://twitter.com" target="_blank"
+            ><div class="footer__icon-block">
+              <div class="footer__icon-box">
+                <img src="../../assets/icons/twitter.svg" alt="Twitter" />
+              </div>
+              <p class="footer__icon-name">Twitter</p>
             </div>
-            <p class="footer__icon-name">Twitter</p>
-          </div>
-          <div class="footer__icon-block">
-            <div class="footer__icon-box">
-              <img src="../../assets/icons/insta.svg" alt="Instagram" />
+          </a>
+          <a class="link" href="https://www.instagram.com" target="_blank">
+            <div class="footer__icon-block">
+              <div class="footer__icon-box">
+                <img src="../../assets/icons/insta.svg" alt="Instagram" />
+              </div>
+              <p class="footer__icon-name">Instagram</p>
             </div>
-            <p class="footer__icon-name">Instagram</p>
-          </div>
-
-          <div class="footer__icon-block">
-            <div class="footer__icon-box">
-              <img src="../../assets/icons/yt.svg" alt="YouTube" />
+          </a>
+          <a class="link" href="https://www.youtube.com" target="_blank">
+            <div class="footer__icon-block">
+              <div class="footer__icon-box">
+                <img src="../../assets/icons/yt.svg" alt="YouTube" />
+              </div>
+              <p class="footer__icon-name">YouTube</p>
             </div>
-            <p class="footer__icon-name">YouTube</p>
-          </div>
+          </a>
         </section>
         <menu class="footer-menu-section">
           <nav>
-            <ul class="footer-menu">
-              <li><a>About</a></li>
-              <li><a>Map</a></li>
-              <li><a>Zoos</a></li>
-              <li><a>Contact us</a></li>
+            <ul class="footer-menu" id="footer-menu">
+              <li class="footer-menu__item">
+                <a
+                  class="link footer-menu__link"
+                  target="_blank"
+                  href="./index.html"
+                  >About</a
+                >
+              </li>
+              <li class="footer-menu__item">
+                <a class="link footer-menu__link" href="#footer-menu">Map</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="link footer-menu__link" href="#footer-menu">Zoos</a>
+              </li>
+              <li class="footer-menu__item">
+                <a class="link footer-menu__link" href="#footer-menu"
+                  >Contact us</a
+                >
+              </li>
             </ul>
           </nav>
         </menu>
         <section class="footer__right-section">
-          <form>
+          <form class="footer__form">
             <header class="footer__form-header">Subscribe to our news</header>
-            <input placeholder="Enter your mail" class="footer__input" />
+            <input
+              placeholder="Enter your mail"
+              class="footer__input"
+              type="email" 
+              required/>
             <button type="submit" class="footer__submit-button">Submit</button>
           </form>
           <aside class="footer__copyright">
