@@ -148,7 +148,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  left: 880px;
+  left: 640px;
   top: 86px;
   z-index: 10;
 }
@@ -174,13 +174,13 @@ body {
   background: linear-gradient(113.96deg, rgb(249, 128, 75) 1.49%, rgb(254, 144, 19) 101.44%);
   border-radius: 232.5px;
   position: relative;
-  left: 807px;
+  left: 587px;
   bottom: 388px;
 }
 
 .hero-section__button-box {
   position: relative;
-  left: 983px;
+  left: 763px;
   bottom: 320px;
 }
 
