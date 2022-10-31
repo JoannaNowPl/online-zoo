@@ -90,7 +90,6 @@ body {
   text-decoration: none;
 }
 
-
 .header {
   box-sizing: border-box;
   color: #fff;
@@ -121,12 +120,14 @@ body {
   padding-top: 2px;
   text-align: center;
 }
-
+.header__title-link,
 .header__title-link:visited {
   color: #fff;
+  text-decoration: none;
 }
-.header__title-link--active{
-  color: $thirdary-orange-color
+
+.header__title-link--active {
+  color: $thirdary-orange-color;
 }
 
 .header__logo {
@@ -149,12 +150,23 @@ body {
 .header__menu-item {
   padding-right: 58px;
 }
+
+.header__menu-link,
 .header__menu-link:visited {
   color: #fff;
+  text-decoration: none;
 }
-.header__menu-link:active,
+
 .header__menu-link:hover {
   color: $thirdary-orange-color;
+}
+
+.header__menu-link:active {
+  color: $thirdary-orange-color;
+}
+
+.header__menu-link--active {
+  color: $thirdary-orange-color !important;
 }
 .header__author {
   width: 30%;
@@ -689,16 +701,19 @@ body {
   padding: 0;
 }
 
-.footer-menu__link {
-  color: #fff;
-}
-
+.footer-menu__link,
 .footer-menu__link:visited {
   color: #fff;
+  text-decoration: none;
 }
+
 .footer-menu__link:active,
 .footer-menu__link:hover {
   color: $thirdary-orange-color;
+}
+
+.footer-menu__link--active {
+  color: $thirdary-orange-color !important;
 }
 
 .footer__right-section {

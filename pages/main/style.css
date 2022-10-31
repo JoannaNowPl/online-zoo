@@ -74,8 +74,10 @@ body {
   text-align: center;
 }
 
+.header__title-link,
 .header__title-link:visited {
   color: #fff;
+  text-decoration: none;
 }
 
 .header__title-link--active {
@@ -110,13 +112,22 @@ body {
   padding-right: 58px;
 }
 
+.header__menu-link,
 .header__menu-link:visited {
   color: #fff;
+  text-decoration: none;
 }
 
-.header__menu-link:active,
 .header__menu-link:hover {
   color: #f9804b;
+}
+
+.header__menu-link:active {
+  color: #f9804b;
+}
+
+.header__menu-link--active {
+  color: #f9804b !important;
 }
 
 .header__author {
@@ -707,17 +718,19 @@ body {
   padding: 0;
 }
 
-.footer-menu__link {
-  color: #fff;
-}
-
+.footer-menu__link,
 .footer-menu__link:visited {
   color: #fff;
+  text-decoration: none;
 }
 
 .footer-menu__link:active,
 .footer-menu__link:hover {
   color: #f9804b;
+}
+
+.footer-menu__link--active {
+  color: #f9804b !important;
 }
 
 .footer__right-section {
