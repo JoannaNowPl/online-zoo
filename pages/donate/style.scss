@@ -1,13 +1,17 @@
 @mixin font($font-size, $font-weight, $line-height) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $line-height;
-  }
-
-  @mixin h3 {
-    @include font(3.6em, 400, 46.8px);
-  }
-
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+@mixin h2 {
+  @include font(4.8em, 400, 57.6px);
+}
+@mixin h3 {
+  @include font(3.6em, 400, 46.8px);
+}
+@mixin subtitle {
+  @include font(2.4em, 400, 28.8px);
+}
 
 .donate-main {
   background: linear-gradient(
@@ -33,27 +37,73 @@
       #eaf7fe 149.54%
     );
 }
-.donate-header-section{
-    width: 1160px;
-    margin: 0 auto;
-    padding: 40px 220px;
+.donate-header-section {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 40px 220px;
 }
 
-.donate-header{
-@include h3;
-color: #fff;
-margin: 0;
-padding-bottom: 10px;
+.donate-header-section__header {
+  @include h3;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
-.donate-header-subtitle{
-    @include font(1.6em, 400, 22.4px);
-    color: #fff;
-    padding-right: 10px;
+.donate-header-section__subtitle {
+  @include font(1.6em, 400, 22.4px);
+  color: #fff;
+  padding-right: 10px;
 }
-.donate-second-header{
-    @include h3;
-    color: rgba(254, 144, 19, 1);
-    margin:0;
-    padding-top: 40px;
+.donate-header-section__second-header {
+  @include h3;
+  color: rgba(254, 144, 19, 1);
+  margin: 0;
+  padding-top: 40px;
+}
+.donate-pick-section {
+  box-sizing: border-box;
+  width: 1160px;
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 40px 92px 62px 92px;
+}
+.donate-pick-section__header {
+  @include h2;
+  color: rgba(254, 144, 19, 1);
+  margin: 0;
+  padding-bottom: 20px;
+  padding-left: 250px;
+}
+.donate-pick-section__subtitle {
+  @include subtitle;
+  margin: 0;
+  padding-bottom: 60px;
+}
+.donate-pick-section__panda-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.donate-pick-section__number-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 215px;
+  position: relative;
+  top: 12px;
+}
+.donate-pick-section__number {
+  @include font(7.2em, 500, 57.6px);
+  padding-bottom: 11px;
+}
+.donate-pick-section__number-description {
+  @include font(1.6em, 400, 22.4px);
+}
+.donate-pick-section__vector-x {
+  padding: 0 64px 0 11px;
 }
