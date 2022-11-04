@@ -1,0 +1,59 @@
+@mixin font($font-size, $font-weight, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+  }
+
+  @mixin h3 {
+    @include font(3.6em, 400, 46.8px);
+  }
+
+
+.donate-main {
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+.donate-header-section{
+    width: 1160px;
+    margin: 0 auto;
+    padding: 40px 220px;
+}
+
+.donate-header{
+@include h3;
+color: #fff;
+margin: 0;
+padding-bottom: 10px;
+}
+
+.donate-header-subtitle{
+    @include font(1.6em, 400, 22.4px);
+    color: #fff;
+    padding-right: 10px;
+}
+.donate-second-header{
+    @include h3;
+    color: rgba(254, 144, 19, 1);
+    margin:0;
+    padding-top: 40px;
+}
