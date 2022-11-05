@@ -24,6 +24,7 @@ $primary-orange-color: rgb(250, 111, 50);
 $secondary-orange-color: rgb(254, 144, 19);
 $thirdary-orange-color: #f9804b;
 $orange-color-hover: rgba(228, 114, 9, 1);
+$green-color-active: #4B9200;
 
 @mixin border-primary {
   border: 1px solid;
@@ -74,9 +75,13 @@ body {
   padding-top: 2px;
   cursor: pointer;
 }
-.button:active {
+.button:hover{
   background-image: none;
   background-color: $orange-color-hover;
+}
+.button:active {
+  background-image: none;
+  background-color: $green-color-active;
 }
 .button--rectangle {
   border-radius: 5px;
@@ -358,9 +363,13 @@ body {
   border-radius: 31px;
   cursor: pointer;
 }
-.button-round:active {
+.button-round:hover{
   background-image: none;
   background-color: $orange-color-hover;
+}
+.button-round:active {
+  background-image: none;
+  background-color: $green-color-active
 }
 .gallery-section__bottom-button-box {
   display: flex;
