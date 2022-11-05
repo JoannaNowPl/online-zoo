@@ -98,33 +98,93 @@
             class="donate-pick-section__vector-x" />
           <img src="../../assets/icons/panda_widget1.svg" alt="panda" />
         </div>
-        <form>
-          <span>Amount</span>
-          <div>
-            <input type="radio" id="radio-5000">
-            <label for="radio-5000">$5000</label>
-            <input type="radio" id="radio-2000">
-            <label for="radio-5000">$2000</label>
-            <input type="radio" id="radio-1000">
-            <label for="radio-5000">$1000</label>
-            <input type="radio" id="radio-500">
-            <label for="radio-5000">$500</label>
-            <input type="radio" id="radio-250">
-            <label for="radio-5000">$250</label>
-            <input type="radio" id="radio-100">
-            <label for="radio-5000">$100</label>
-            <input type="radio" id="radio-50">
-            <label for="radio-5000">$50</label>
-            <input type="radio" id="radio-25">
-            <label for="radio-5000">$25</label>
+        <form class="donate-pick-section__form">
+          <p class="donate-pick-section__input-description">Amount</p>
+          <div class="donate-pick-section__inputs-box">
+            <div class="donate-pick-section__inputs-box-line"></div>
+            <div class="donate-pick-section__inputs">
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-5000" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-2000" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-1000" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-500" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-250" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-100" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-50" />
+              <input
+                class="donate-pick-section__radio"
+                type="radio"
+                id="radio-25" />
+            </div>
           </div>
-          <input type="number" placeholder="Another amount">
-          <input type="radio" id="radio-monthly">
-          <label for="radio-monthly">Monthly</label>
-          <input type="radio" id="radio-once">
-          <label for="radio-once">Once</label>
-          <button type="submit">FEED A FRIEND</button>
-          <P>Share with your friends on social networks</P>
+          <div class="donate-pick-section__labels">
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />5000</label
+            >
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />2000</label
+            >
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />1000</label
+            >
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />500
+            </label>
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />250
+            </label>
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />100
+            </label>
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />50
+            </label>
+            <label class="donate-pick-section__label" for="radio-5000"
+              ><img src="../../assets/icons/$.svg" />25
+            </label>
+          </div>
+          <input
+            class="donate-pick-section__amount-input"
+            type="number"
+            placeholder="Another amount" />
+
+          <div class="donate-pick-section__bottom-radio-box">
+            <input
+              class="donate-pick-section__bottom-radio"
+              type="radio"
+              id="radio-monthly" />
+            <label class="donate-pick-section__bottom-label" for="radio-monthly">Monthly</label>
+            <input
+              class="donate-pick-section__bottom-radio"
+              type="radio"
+              id="radio-once" />
+            <label class="donate-pick-section__bottom-label"  for="radio-once">Once</label>
+          </div>
+
+          <button class="button" type="submit">FEED A FRIEND</button>
+          <p class="donate-pick-section__share">
+            Share with your friends on social networks
+          </p>
         </form>
       </section>
     </main>
