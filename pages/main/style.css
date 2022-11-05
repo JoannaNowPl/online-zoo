@@ -18,9 +18,14 @@ body {
   cursor: pointer;
 }
 
-.button:active {
+.button:hover {
   background-image: none;
   background-color: rgb(228, 114, 9);
+}
+
+.button:active {
+  background-image: none;
+  background-color: #4B9200;
 }
 
 .button--rectangle {
@@ -350,9 +355,14 @@ body {
   cursor: pointer;
 }
 
-.button-round:active {
+.button-round:hover {
   background-image: none;
   background-color: rgb(228, 114, 9);
+}
+
+.button-round:active {
+  background-image: none;
+  background-color: #4B9200;
 }
 
 .gallery-section__bottom-button-box {
