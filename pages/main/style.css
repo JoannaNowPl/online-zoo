@@ -85,7 +85,8 @@ body {
   text-decoration: none;
 }
 
-.header__title-link--active {
+.header__title-link:hover,
+.header__title-link:active {
   color: #f9804b;
 }
 
@@ -141,7 +142,7 @@ body {
 }
 
 .hero-section {
-  background-image: url("../../assets/images/Giant Panda.png");
+  background-image: url("../../assets/images/GiantPanda.png");
   background-color: #000;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -776,7 +777,7 @@ body {
 
 .footer__input:focus {
   background: none;
-  border: 1px solid rgb(75, 146, 0);
+  border: 1px solid #4b9200;
   outline: none;
 }
 

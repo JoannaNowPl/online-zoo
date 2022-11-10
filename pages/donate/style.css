@@ -13,6 +13,24 @@ input[type=number] {
   padding-bottom: 185px;
 }
 
+.donate-hero-section {
+  background-color: #000;
+  min-width: 1600px;
+  height: 390px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.donate-hero-section__image {
+  width: 1600px;
+  height: 390px;
+  object-fit: cover;
+  margin: 0;
+}
+
 .donate-header-section {
   width: 1160px;
   margin: 0 auto;
